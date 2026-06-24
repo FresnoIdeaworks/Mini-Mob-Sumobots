@@ -1,0 +1,148 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_if" id="vScqYLK1aE6Sm];)p)Qu" x="137" y="124">
+    <mutation else="1"></mutation>
+    <value name="IF0">
+      <block type="io_digitalread" id="*.f-.wc/jt/0ab0MK[g{">
+        <field name="PIN">7</field>
+      </block>
+    </value>
+    <statement name="DO0">
+      <block type="variables_set" id="Hq_GHa[Qx6FVFz|jJc`Q">
+        <field name="VAR">Alpha</field>
+        <value name="VALUE">
+          <block type="math_number" id="YT?7M^Cyu}%:EVx?z]R;">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <statement name="ELSE">
+      <block type="variables_set" id="]Kxa?8iZ?tR~[pCF`.bW">
+        <field name="VAR">Alpha</field>
+        <value name="VALUE">
+          <block type="math_number" id="ZRKv+:b6Rt0V=]%Z[Bn%">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <next>
+      <block type="controls_if" id="^|r`c%lE#mAy,*a#WSFb">
+        <value name="IF0">
+          <block type="logic_operation" id="a=K7dMqbH-p8uRK!2[^r">
+            <field name="OP">AND</field>
+            <value name="A">
+              <block type="logic_compare" id="Q;+PJ*|1s!gL/n.q:yN/">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="variables_get" id="+lk#Uh5)i{[lxK3aP!G)">
+                    <field name="VAR">Alpha</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="9]H_(/npEi8kxHI4)C,K">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block type="logic_compare" id="5Ym9lFdz*Q0`?k!pKl6c">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="variables_get" id="~1-luJ75l9)x}v?}:??j">
+                    <field name="VAR">Charlie</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="zNE{cgW)nJ-:nV^OSxiY">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="variables_set" id="7Ml_1LA7}jrQ!g@7AB-s">
+            <field name="VAR">Bravo</field>
+            <value name="VALUE">
+              <block type="math_arithmetic" id="ipM{!@}Lujt]Szwr_:LA">
+                <field name="OP">MINUS</field>
+                <value name="A">
+                  <block type="math_number" id="1]K4lN4}k:rhGuxWS?t5">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="variables_get" id="sL]x[eV(~{5mIm{A}Ijx">
+                    <field name="VAR">Bravo</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="time_delay" id="JX)|1Z{Ez,Mbm}yjgdx{">
+                <value name="DELAY_TIME_MILI">
+                  <block type="math_number" id="HedlW^rCk7-d75eW*l]r">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="variables_set" id="JJpsOOL[m}V}Nr@lh,QV">
+            <field name="VAR">Charlie</field>
+            <value name="VALUE">
+              <block type="variables_get" id="7#JOel}~bao(BZ?v{Fj@">
+                <field name="VAR">Alpha</field>
+              </block>
+            </value>
+            <next>
+              <block type="controls_if" id="5Yj4Z-S%mnd]SUXAiin1">
+                <mutation else="1"></mutation>
+                <value name="IF0">
+                  <block type="logic_compare" id="wy~cIUu{e=eAl7}K1k~{">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="variables_get" id="f4Q=AM!+)/zF9~D|3dg^">
+                        <field name="VAR">Bravo</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="KtSG2P:M=/;1q#)Z_QBL">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="io_digitalwrite" id="CdjHA;|nu_#CV#yzoJat">
+                    <field name="PIN">13</field>
+                    <value name="STATE">
+                      <block type="io_highlow" id="y!cK{r6.W(cMb;V?iSea">
+                        <field name="STATE">HIGH</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <statement name="ELSE">
+                  <block type="io_digitalwrite" id="_+rOXFwdg{e!)MZwCwaP">
+                    <field name="PIN">13</field>
+                    <value name="STATE">
+                      <block type="io_highlow" id="kqe..2YCv(`?F/Du7ZJ9">
+                        <field name="STATE">LOW</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

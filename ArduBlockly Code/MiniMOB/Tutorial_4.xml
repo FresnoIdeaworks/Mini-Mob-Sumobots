@@ -1,0 +1,174 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_if" id="vScqYLK1aE6Sm];)p)Qu" x="130" y="82">
+    <value name="IF0">
+      <block type="logic_compare" id="f?nOJj0zZL^VdE1,r30|">
+        <field name="OP">EQ</field>
+        <value name="A">
+          <block type="variables_get" id="RiRZ.TGMfRBU;UdgbuW*">
+            <field name="VAR">Alpha</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="math_number" id="lxj{+WH3[Cdj*WgpD%c|">
+            <field name="NUM">255</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <statement name="DO0">
+      <block type="variables_set" id="Hq_GHa[Qx6FVFz|jJc`Q">
+        <field name="VAR">Bravo</field>
+        <value name="VALUE">
+          <block type="math_number" id="YT?7M^Cyu}%:EVx?z]R;">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <next>
+      <block type="controls_if" id="I/N~!{RcI{p#!e2#.;Qa">
+        <value name="IF0">
+          <block type="logic_compare" id="xP.g!6Y;yblY]3s@mLr/">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="variables_get" id="^3r(HY.:YVu-:cEVwA}]">
+                <field name="VAR">Alpha</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="Pg~pf;BVbWDWJnBsVjyK">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="variables_set" id="ZPC9UvDOOBkML~G|}EL+">
+            <field name="VAR">Bravo</field>
+            <value name="VALUE">
+              <block type="math_number" id="?^SK`2nCvv}J0R%h_}nw">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_if" id="^|r`c%lE#mAy,*a#WSFb">
+            <value name="IF0">
+              <block type="logic_compare" id="w68{Dhh-iOz=2@{WDj%J">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="variables_get" id="YmmEL~~uN^86-6Trf8h-">
+                    <field name="VAR">Bravo</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="S#@7El=8O1umVn!78CXj">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="variables_set" id="7Ml_1LA7}jrQ!g@7AB-s">
+                <field name="VAR">Alpha</field>
+                <value name="VALUE">
+                  <block type="math_arithmetic" id="ipM{!@}Lujt]Szwr_:LA">
+                    <field name="OP">ADD</field>
+                    <value name="A">
+                      <block type="variables_get" id="sL]x[eV(~{5mIm{A}Ijx">
+                        <field name="VAR">Alpha</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="1]K4lN4}k:rhGuxWS?t5">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="io_analogwrite" id="X,98hf*y`]e,gSZ]%mVP">
+                    <field name="PIN">9</field>
+                    <value name="NUM">
+                      <block type="variables_get" id="3hb-ga+`r+Nn`2hfNh|P">
+                        <field name="VAR">Alpha</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="time_delay" id="JX)|1Z{Ez,Mbm}yjgdx{">
+                        <value name="DELAY_TIME_MILI">
+                          <block type="math_number" id="HedlW^rCk7-d75eW*l]r">
+                            <field name="NUM">10</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_if" id="5Yj4Z-S%mnd]SUXAiin1">
+                <value name="IF0">
+                  <block type="logic_compare" id="wy~cIUu{e=eAl7}K1k~{">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="variables_get" id="f4Q=AM!+)/zF9~D|3dg^">
+                        <field name="VAR">Bravo</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="KtSG2P:M=/;1q#)Z_QBL">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="variables_set" id="EO!B^Z{r=-6h[Z-v/,q!">
+                    <field name="VAR">Alpha</field>
+                    <value name="VALUE">
+                      <block type="math_arithmetic" id="Ys|^Xg;YQj2=!.hy62K#">
+                        <field name="OP">MINUS</field>
+                        <value name="A">
+                          <block type="variables_get" id="avP?yky+Fm-yGnN2jjm8">
+                            <field name="VAR">Alpha</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="RZ8pX8mH:GX8u_9^ooc0">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="io_analogwrite" id="XjILm#s5Fw;N}jaUOwJl">
+                        <field name="PIN">9</field>
+                        <value name="NUM">
+                          <block type="variables_get" id="5.7V,7~MDn5n/c#T+a!]">
+                            <field name="VAR">Alpha</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="time_delay" id="n`B+Vi/7Xq)/s)i;|z!Z">
+                            <value name="DELAY_TIME_MILI">
+                              <block type="math_number" id="^)Z:L(C`)(gW?M.}D-KQ">
+                                <field name="NUM">10</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

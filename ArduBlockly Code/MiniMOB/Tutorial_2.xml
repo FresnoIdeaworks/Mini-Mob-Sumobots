@@ -1,0 +1,30 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_if" id="5Yj4Z-S%mnd]SUXAiin1" x="109" y="107">
+    <mutation else="1"></mutation>
+    <value name="IF0">
+      <block type="io_digitalread" id="*.f-.wc/jt/0ab0MK[g{">
+        <field name="PIN">6</field>
+      </block>
+    </value>
+    <statement name="DO0">
+      <block type="io_digitalwrite" id="CdjHA;|nu_#CV#yzoJat">
+        <field name="PIN">13</field>
+        <value name="STATE">
+          <block type="io_highlow" id="y!cK{r6.W(cMb;V?iSea">
+            <field name="STATE">HIGH</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <statement name="ELSE">
+      <block type="io_digitalwrite" id="_+rOXFwdg{e!)MZwCwaP">
+        <field name="PIN">13</field>
+        <value name="STATE">
+          <block type="io_highlow" id="kqe..2YCv(`?F/Du7ZJ9">
+            <field name="STATE">LOW</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>

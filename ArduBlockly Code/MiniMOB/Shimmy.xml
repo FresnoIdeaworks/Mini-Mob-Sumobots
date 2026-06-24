@@ -1,0 +1,64 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="servo_write" id="c2==*FVOX7x9h|gdKt=N" x="365" y="-2">
+    <field name="SERVO_PIN">10</field>
+    <value name="SERVO_ANGLE">
+      <block type="math_number" id="1LafS7=3SAcrsH.)F4wA">
+        <field name="NUM">120</field>
+      </block>
+    </value>
+    <next>
+      <block type="servo_write" id="8@D8tEcvM]P;`75}P]XI">
+        <field name="SERVO_PIN">11</field>
+        <value name="SERVO_ANGLE">
+          <block type="math_number" id="cuiOC*[ONcHrWrDuA%6^">
+            <field name="NUM">70</field>
+          </block>
+        </value>
+        <next>
+          <block type="time_delay" id="}o7eO4(tbbIW*A~z0Ve6">
+            <value name="DELAY_TIME_MILI">
+              <block type="math_number" id=".mvZPM*)N5*},OzR@Z%P">
+                <field name="NUM">500</field>
+              </block>
+            </value>
+            <next>
+              <block type="servo_write" id="jz[d2;mW9g4zFRg.pMH*">
+                <field name="SERVO_PIN">10</field>
+                <value name="SERVO_ANGLE">
+                  <block type="math_number" id="bC@9AOKhZ-.5#`jyV_xd">
+                    <field name="NUM">130</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="servo_write" id="`C{#tq#~7jhyE(ZypxYX">
+                    <field name="SERVO_PIN">11</field>
+                    <value name="SERVO_ANGLE">
+                      <block type="math_number" id="LcB/!OlYG3N9,2a?(d%)">
+                        <field name="NUM">80</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="time_delay" id="5hanV9t6e2wzhl)iO)Vl">
+                        <value name="DELAY_TIME_MILI">
+                          <block type="math_number" id="|V,4C^XAiBfFGd7#|Or{">
+                            <field name="NUM">500</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="text" id=":`HxvLQdFkT_T%~Tau!9" x="781" y="15">
+    <field name="TEXT">Slight Turn Left</field>
+  </block>
+  <block type="text" id="6Mg{i(hVEtC.0#p_7T08" x="785" y="133">
+    <field name="TEXT">Slight Turn Right</field>
+  </block>
+</xml>

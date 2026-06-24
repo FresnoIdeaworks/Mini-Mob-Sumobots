@@ -1,0 +1,26 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="servo_write" id="{BLk{j_u;?|UPs!z|03P" x="92" y="69">
+    <field name="SERVO_PIN">10</field>
+    <value name="SERVO_ANGLE">
+      <block type="math_number" id="oj9SW7Q:sfU(iI~[pv]s">
+        <field name="NUM">45</field>
+      </block>
+    </value>
+    <next>
+      <block type="servo_write" id="3XNNK}2(ncY!qX!yR7p%">
+        <field name="SERVO_PIN">11</field>
+        <value name="SERVO_ANGLE">
+          <block type="math_number" id="A;jWa#;Zc4QZYqhGbX6o">
+            <field name="NUM">135</field>
+          </block>
+        </value>
+      </block>
+    </next>
+  </block>
+  <block type="text" id=",hHVQAO40X?(z60(/LIV" x="545" y="75">
+    <field name="TEXT">Motor 1 goes counter-clockwise</field>
+  </block>
+  <block type="text" id="sNxxRH-_:WXd^!SR;ud1" x="544" y="110">
+    <field name="TEXT">Motor 2 goes clockwise</field>
+  </block>
+</xml>

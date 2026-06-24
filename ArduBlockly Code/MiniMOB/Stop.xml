@@ -1,0 +1,20 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="servo_write" id="yMrD2(S~MPvN~JDHO48j" x="106" y="167">
+    <field name="SERVO_PIN">10</field>
+    <value name="SERVO_ANGLE">
+      <block type="math_number" id="#%BN3XTCE;-cw;18+Wzz">
+        <field name="NUM">90</field>
+      </block>
+    </value>
+    <next>
+      <block type="servo_write" id="tjVm|%3]17)1@J?YJFCZ">
+        <field name="SERVO_PIN">11</field>
+        <value name="SERVO_ANGLE">
+          <block type="math_number" id="ikS,qVzgS`x+km6(Mbx%">
+            <field name="NUM">90</field>
+          </block>
+        </value>
+      </block>
+    </next>
+  </block>
+</xml>

@@ -1,0 +1,20 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="serial_setup" id="dvc4{f/]c[;]l#~E:^gx" x="85" y="37">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="SPEED">9600</field>
+  </block>
+  <block type="serial_print" id="IBtrETk+r}uVOAsSI@a0" x="66" y="123">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="NEW_LINE">TRUE</field>
+    <value name="CONTENT">
+      <block type="text_join" id="V#ptHQRREZScC00|^wTd">
+        <mutation items="2"></mutation>
+        <value name="ADD0">
+          <block type="io_analogread" id="^S8j`A|mciGuWuY3QsG5">
+            <field name="PIN">A0</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+</xml>

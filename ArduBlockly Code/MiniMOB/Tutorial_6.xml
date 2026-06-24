@@ -1,0 +1,29 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="io_analogwrite" id="-_tU7dU6r(9J;GmJt5]," x="193" y="114">
+    <field name="PIN">9</field>
+    <value name="NUM">
+      <block type="math_arithmetic" id="fB]=SN#1,eEqIq5oNM;H">
+        <field name="OP">ADD</field>
+        <value name="A">
+          <block type="io_analogread" id="R11@2Bex3,BrZ3QbniBC">
+            <field name="PIN">A0</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="math_number" id="zaE0V3E=6=j@EMu2S)p!">
+            <field name="NUM">4</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="time_delay" id="LCR9}ia,FldYN2~rlBCY">
+        <value name="DELAY_TIME_MILI">
+          <block type="math_number" id="D?;LT,ic-]Cf(4+MFknO">
+            <field name="NUM">10</field>
+          </block>
+        </value>
+      </block>
+    </next>
+  </block>
+</xml>

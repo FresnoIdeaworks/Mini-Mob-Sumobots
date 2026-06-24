@@ -1,0 +1,196 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_if" id="d?8Mt|cQSE5*JE#Nh{Fm" x="125" y="77">
+    <mutation else="1"></mutation>
+    <value name="IF0">
+      <block type="io_digitalread" id="MJ1mNw/3e0q_C24@WtH]">
+        <field name="PIN">7</field>
+      </block>
+    </value>
+    <statement name="DO0">
+      <block type="variables_set" id="Ga6]uN#Q=Di90nZ.V.39">
+        <field name="VAR">Alpha</field>
+        <value name="VALUE">
+          <block type="math_number" id="9]T6k?thUeEPRG~3b{hb">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <statement name="ELSE">
+      <block type="variables_set" id="?c+/1h0xG{@D}Yo`n(Oo">
+        <field name="VAR">Alpha</field>
+        <value name="VALUE">
+          <block type="math_number" id="VhW+pRZ{nZ];oULCt55S">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <next>
+      <block type="controls_if" id="|7/w.^]{xv8q(b6g6PF2">
+        <value name="IF0">
+          <block type="logic_operation" id="N.z.!vK~?{%M|28{^P]|">
+            <field name="OP">AND</field>
+            <value name="A">
+              <block type="logic_compare" id="S2SU_l8p]n#cF~M*zJvk">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="variables_get" id="wd?}4u|T6FQTi0+F6bS%">
+                    <field name="VAR">Delta</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="sH`n^^2P-Pc_%F#TdKW3">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block type="logic_compare" id="YyPA=64BoHP7g3vQSU|q">
+                <field name="OP">GT</field>
+                <value name="A">
+                  <block type="math_arithmetic" id="fM[;EZVTAKVAYj0gLCOv">
+                    <field name="OP">MINUS</field>
+                    <value name="A">
+                      <block type="math_random_int" id="d[m8Y0Mx2UW}Q/dAlhT;">
+                        <value name="FROM">
+                          <block type="math_number" id="eO1G)/h6cgZBH-.=LZ;7">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="TO">
+                          <block type="variables_get" id="dyP5DZlVw`Q;Ej#guv)h">
+                            <field name="VAR">Echo</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="variables_get" id="W@#Zxuk9r|=f!4(7/tQq">
+                        <field name="VAR">Echo</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="SCJ0D.GN@M!mX9%l-4G}">
+                    <field name="NUM">500</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="variables_set" id="(3Vn3:7RQ.H|H{8uOV0T">
+            <field name="VAR">Foxtrot</field>
+            <value name="VALUE">
+              <block type="math_number" id="z)xKB3Iw9.(~2bgTWK%j">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <next>
+              <block type="io_analogwrite" id="Rq.@CRg3(VQ07e|0yp_6">
+                <field name="PIN">9</field>
+                <value name="NUM">
+                  <block type="variables_get" id="kKj/X0~uclJ1zgEd9vzq">
+                    <field name="VAR">Foxtrot</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="time_delay" id="pzY!abXkLY@zQ0G4`7DL">
+                    <value name="DELAY_TIME_MILI">
+                      <block type="math_number" id="?l(I`7z]5.At5,*Ih+Yu">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="controls_if" id="{MCCUGp5dL]Cya)KM(ip">
+                        <value name="IF0">
+                          <block type="logic_compare" id="O5+Wld,SJ;GUouM|RniY">
+                            <field name="OP">GT</field>
+                            <value name="A">
+                              <block type="variables_get" id="(XGjhP/B;wI2%)n.:AK3">
+                                <field name="VAR">Foxtrot</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="!#5YRm#1OhANld)8[15K">
+                                <field name="NUM">255</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="variables_set" id="ZpNYNna*qLOMp@7}m]z|">
+                            <field name="VAR">Foxtrot</field>
+                            <value name="VALUE">
+                              <block type="math_number" id="{XPtq?`cB-ION2@6:-5`">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="variables_set" id="R8`djRg9^3h)^Z%J]OjC">
+            <field name="VAR">Charlie</field>
+            <value name="VALUE">
+              <block type="variables_get" id="W!Ah[e{AlFpw}EdyRxX}">
+                <field name="VAR">Bravo</field>
+              </block>
+            </value>
+            <next>
+              <block type="controls_if" id="6+oRwuY:SVI^@*uj])1T">
+                <mutation else="1"></mutation>
+                <value name="IF0">
+                  <block type="logic_compare" id="hag[xgoxMC^m0K#`^bP+">
+                    <field name="OP">GT</field>
+                    <value name="A">
+                      <block type="variables_get" id="0QX6Up~26a9UJBuO3e1^">
+                        <field name="VAR">Delta</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="gUlgr2E=)2^VM1;6W*z:">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="io_analogwrite" id="T!G7gqzJ@yhR7J(wWMx=">
+                    <field name="PIN">9</field>
+                    <value name="NUM">
+                      <block type="variables_get" id="3o_,L2%|ti!bR|:MpOgc">
+                        <field name="VAR">Foxtrot</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <statement name="ELSE">
+                  <block type="io_analogwrite" id="/4M4G]o8YA;U!%BDi)NQ">
+                    <field name="PIN">9</field>
+                    <value name="NUM">
+                      <block type="math_number" id="1x2WVI3D9+g|k%rN6JBE">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
